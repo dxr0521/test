@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="i" src="./images/곡;.jfif" width="120" height="100">
+    <script>
+        let i=0
+        function changeImage(){
+            if(i==0){document.getElementById("i").src="./images/라면.jfif"; i=1}
+            else if(i==1){
+                document.getElementById("i").src="./images/곡;.jfif"; i=0
+            }
+        }
+    </script>
+    <input type="button" onclick="changeImage()" value="불러보세요">
+    <img src="./images/짜장면.jfif" id="w" onmouseover="mouseover()" onmouseleave="mouseleave()">
+    <script>
+        function mouseover(){
+            document.getElementById("w").src="./images/라면.jfif"
+        }
+        function mouseleave(){
+            document.getElementById("W").src="./images/짜장면.jfif"
+        }
+    </script>
+</body>
+</html>

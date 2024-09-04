@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date= new Date();
+        let time=date.getMonth();
+        let greeting;
+        document.write(date.getMonth()+1+"월"+"<br>")
+        if(time<7){
+            greeting="상반기입니다.";
+            document.write(greeting+"<br>");
+        }
+        else{
+            greeting="하반기입니다.";
+            document.write(greeting+"<br>")
+        }
+    </script>
+</body>
+</html>

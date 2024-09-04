@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for( i=1; i<7; i++){
+            document.write("<h"+i+">안녕</h"+i+">"+"<br>")
+        }
+    </script>
+    <table border="1">
+        <tr>
+        <td>섭씨온도</td>
+        <td>화씨온도</td>
+        </tr>
+        <script>
+            for(cel=0; cel<11; cel++){
+                document.write("<tr>");
+                document.write("<td>"+cel+"</td>");
+                document.write("<td>"+((cel*9.0/5)+32)+"</td>")
+                document.write("<tr>")
+            }
+            </script>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+        <td>섭씨온도</td>
+        <td>화씨온도</td>
+        </tr>
+        <script>
+            for(cel=0; cel<21; cel=cel+2){
+                document.write("<tr>");
+                document.write("<td>"+cel+"</td>");
+                document.write("<td>"+((cel*9.0/5)+32)+"</td>")
+                document.write("<tr>")
+            }
+            </script>
+    </table>
+    <h2>구구단 표</h2>
+    <table border="1" width=30%>
+        <script>
+            for(let i=1; i<=9; i++){
+                document.write("<tr>");
+                document.write ("<td>"+i+"</td>");
+
+                for(let j=2; j<=9; j++){
+                    document.write("<td>"+i*j+"</td>");
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+    <h2>구구단 표</h2>
+    <table border="1" width=30%>
+        <script>
+            for(let i=2; i<=9; i++){
+                document.write("<tr>");
+                document.write ("<td>"+i+"</td>");
+
+                for(let j=3; j<=9; j++){
+                    document.write("<td>"+i*j+"</td>");
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+    <h2>구구단 표</h2>
+    <table border="1" width=30%>
+        <script>
+            for(let i=2; i<=9; i=i+2){
+                document.write("<tr>");
+                document.write ("<td>"+i+"</td>");
+
+                for(let j=2; j<5; j++){
+                    document.write("<td>"+i*j+"</td>");
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+    <br>
+    <table border="1" width=30%>
+        <script>
+            for(let i=3; i<=5; i++){
+                document.write("<tr>");
+                document.write (("<td>"+i+"의배수"+"</td>")+"<td>"+i+"</td>");
+
+                for(let j=2; j<=7; j++){
+                    document.write("<td>"+i*j+"</td>");
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>

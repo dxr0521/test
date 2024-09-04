@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date= new Date();
+        let time=date.getHours();
+        let greeting;
+        if(time<12){
+            greeting="Good Morning";
+            document.write(greeting+"<br>");
+        }
+    </script>
+    <script>
+        let date2 = new Date();
+        let time2=date2.getHours();
+        let greeting2;
+        if(time2<12){
+            greeting2="Good Morning2";
+            document.write(greeting2+"<br>");
+        }
+        else{
+            greeting2="Good afternoon";
+            document.write(greeting2+"<br>")
+        }
+    </script>
+    <script>
+        let temper=prompt("온도를 입력하세요:", "-20 ~ 40 사이의 정수로");
+        temper=parseInt(temper);
+        if( temper<=0){
+            alert("많이 춥습니다. 장갑, 목도리를 챙기세요");
+        }
+        else if( 0<temper<=10){
+            alert("영상이지만 따듯한 옷을 입으세요")
+        }
+        else if(10<temper<=20){
+            alert("가벼운 옷차림을 하세요")
+        }
+        else{
+            alert("더위에 대비하세요");
+        }
+    </script>
+    <script>
+        let grade=prompt("성적을 입력하시오.","A-F사이의 문자로")
+        switch(grade){
+            case 'A': alert("최고 성적입니다. 잘했어요");
+                break;
+            case 'B': alert("좋은 성과입니다.")
+                break;
+            case 'C': alert("조금만 더 해봅시다.")
+                break;
+            case 'D'||'E'||"F": alert("재수강해야 합니다.");
+        }
+    </script>
+    <script>
+        let c=0
+        while(c<10){
+            document.write("카운터 : "+c+"<br>")
+            c++;
+        }
+    </script>
+    <script>
+        for(i=0; i<10; i++){
+            document.write("hello world"+i+"<br>")
+        }
+    </script>
+</body>
+</html>
